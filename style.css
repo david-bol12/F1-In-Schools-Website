@@ -1,0 +1,213 @@
+﻿body {
+	background-color: white;
+	font-family: 'DM Sans', sans-serif;
+  height: 100%;
+  position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.footer {
+  background-color: rgb(41, 43, 46);
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.homeheader {
+  color: rgb(47, 189, 245);
+  text-align: center;
+  font-size: 5.5vw;
+  animation-name: homeheadDesktop;
+  animation-duration: 1s;
+}
+.heading {
+  text-align: center;
+  font-size: 40px;
+  margin: 5% 35%;
+  border-bottom: black solid 3px;
+}
+@keyframes homeheadDesktop {
+  from {font-size: 3vw;}
+  to {font-size: 5.5vw;}
+}
+@keyframes homeheadMobile {
+  from {font-size: 5vw;}
+  to {font-size: 12vw;}
+}
+.about-us {
+  text-align: center;
+  font-size: 22px;
+  padding: 0% 15%;
+  font-weight: 600;
+}
+
+/* Sponsors */
+.sponsor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 100px;
+}
+.sponsorlogo {
+  width: 12vw;
+}
+.sponsordesc {
+  font-size: 20px;
+  padding-left: 20px;
+  margin-left: 50px;
+}
+/* Profiles */
+.row {
+  margin: 0% 3.5%;
+  padding: 10px;
+  overflow: hidden;
+  position: absolute;
+}
+.column {
+  float: left;
+  margin-bottom: 1%;
+  width: 50%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10% 2%;
+  display: grid;
+  grid-template-areas:
+    'auto auto';
+}
+.headshot {
+  width: 33.33%;
+  grid-area: image;
+}
+.desc{
+  margin: 0 0 0 33.33%;
+  width: 66.66%;
+  height: 100%;
+  grid-area: text;
+}
+.role {
+  font-size: 1.35vw;
+  text-align: center;
+}
+.about {
+  margin: 0 10px;
+  font-size: 1.2vw;
+}
+/* Navigation Bar */
+.socialMediaIcon {
+  width: 60%;
+  margin: 30px 8px;
+  color: rgb(41, 43, 46);
+  display: inline;
+}
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	position: sticky;
+	top: 0;
+	border-bottom: 1px solid rgb(217, 217, 217);
+  width: 100%;
+}
+.navbarblock {
+	float: left;
+}
+.navbarlinks {
+	text-decoration: none;
+	display: block;
+	padding: 1.5% 0%;
+	margin: 30px 16px;
+	color: black;
+	font-size: 20px;
+	border-bottom: 2px solid white;
+	transition: border-bottom .4s;
+}
+.navbarlinks-active {
+	text-decoration: none;
+	display: block;
+	padding: 1.5% 0%;
+	margin: 30px 16px;
+	color: black;
+	font-size: 20px;
+	border-bottom: 2px solid rgb(47, 189, 245);
+	transition: border-bottom .4s;
+}
+.navbarlinks:hover {
+	border-bottom: 2px solid rgb(217, 217, 217);
+	transition: border-bottom .4s;
+}
+.float-right {
+	float: right;
+}
+.floatright {
+	float: right;
+}
+.logo {
+	margin: 0px 20% 0px 20px;
+}
+.logosize {
+  width: 85%;
+}
+@media screen and (max-width: 650px) {
+/*   Profiles */
+  .sponsorlogo {
+    width: 40vw;
+  }
+  .sponsordesc {
+    font-size: 3.3vw;
+    padding-left: 3.3vw;
+    margin-left: 3.3vw;
+    width: 60vw;
+  }
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+  .column {
+    width: 100%;
+    display: block;
+  }
+  .role {
+    font-size: 3.3vw;
+  }
+  .about {
+    font-size: 3vw;
+  }
+  .navbar {
+    position: static;
+  }
+  .navbarlinks{
+    padding: 15px 10px;
+    margin: 0px 0px;
+    border-bottom: 2px solid rgb(217, 217, 217);
+  }
+  .navbarlinks-active{
+    padding: 15px 10px;
+    margin: 0px 0px;
+  }
+  .float-right {
+    display: none;
+  }
+  .floatright {
+    float: none;
+  }
+  .navbarblock {
+	  float: none;
+  }
+  .logo {
+    margin: 0px 20% 0px 75px;
+  }
+  .logosize {
+    width: 95%;
+  }
+  .homeheader {
+    font-size: 12vw;
+    animation-name: homeheadMobile;
+  }
+  .socialMediaIcon {
+    width: 2vw;
+  }
+}
